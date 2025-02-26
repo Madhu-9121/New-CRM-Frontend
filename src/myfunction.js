@@ -1,0 +1,115 @@
+export const AdminConfig = [
+    {
+      id: "1",
+      icon: "assets/images/sidebarV2/dashboard.svg",
+      text: "Dashboard",
+      level: 0,
+      stateVal: "dashboard",
+      redirectURL: "/dashboard",
+      permissionVal: "dashboard",
+      notificationVal: "buyer management",
+    },
+    {
+      id: "2",
+      icon: "assets/images/sidebarV2/task_icon.svg",
+      text: "Task Manager",
+      level: 1,
+      stateVal: "taskManager",
+      subItems: [
+        {
+          name: "Users",
+          stateVal: "taskManagerUsers",
+          redirectURL: "/taskManager",
+          permissionVal: "taskManager",
+        },
+        {
+          name: "Enquiry",
+          stateVal: "taskManagerEnquiry",
+          redirectURL: "/enquiry",
+          permissionVal: "enquiry",
+        },
+        {
+          name: "Call List",
+          stateVal: "taskManagerCallList",
+          redirectURL: "/callList",
+          permissionVal: "callList",
+          collapseSideBar: true,
+        },
+        {
+          name: "Corporate",
+          stateVal: "taskManagercorporate",
+          redirectURL: "/corporate",
+          permissionVal: "corporate",
+        },
+        {
+          name: "Financer",
+          stateVal: "taskManagerfinancier",
+          redirectURL: "/financier",
+          permissionVal: "financier",
+        },
+      ],
+      collapseTarget: "collapseTaskManager",
+      notificationVal: "tm",
+    },
+    {
+        id: "6",
+        icon: "assets/images/sidebarV2/buyermanagement.svg",
+        text: "User Management",
+        localStorageKey: "user_onboard",
+        level: 1,
+        stateVal: "UserOnboard",
+        subItems: [
+          {
+            name: "Exporter",
+            stateVal: "Exporter",
+            redirectURL: "/usersonboard?tab=Exporter",
+            permissionVal: "",
+            notificationVal: "",
+          },
+          {
+            name: "Financers",
+            stateVal: "Financers",
+            redirectURL: "/usersonboard?tab=Financers",
+            permissionVal: "",
+            notificationVal: "",
+          },
+          {
+            name: "Channel Partner",
+            stateVal: "Channel Partner",
+            redirectURL: "/usersonboard?tab=Channel Partner",
+            permissionVal: "",
+            notificationVal: "",
+          },
+          
+        ],
+        collapseTarget: "collapseUserOnboard",
+        notificationVal: "",
+      },
+    {
+      id: "7",
+      icon: "assets/images/sidebarV2/CRM_admin.svg",
+      text: "CRM",
+      level: 1,
+      stateVal: "CRM",
+      subItems: [
+        {
+          name: "Leads",
+          stateVal: "CRMleads",
+          redirectURL: "/leads",
+          permissionVal: "leads",
+          notificationVal: "",
+        },
+        {
+          name: "Data",
+          stateVal: "CRMdata",
+          redirectURL: "/crmdata",
+          permissionVal: "crmdata",
+          notificationVal: "",
+        },
+      ],
+      collapseTarget: "collapseCRM",
+      notificationVal: "",
+    },
+   
+   
+  ];
